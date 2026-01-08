@@ -5,25 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swadee</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
-<!--ANIMACAO FADE IN-->
-    <script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        keyframes: {
-          fadeIn: {
-            '0%': { opacity: '0', transform: 'translateY(20px)' },
-            '100%': { opacity: '1', transform: 'translateY(0)' },
-          }
-        },
-        animation: {
-          fadeIn: 'fadeIn 1s ease-out forwards',
-        }
-      }
-    }
-  }
-</script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-gray-800 pt-20">
 
@@ -57,9 +39,9 @@
   </div>
 </nav>
 
-<!--CAROUSSEL-->
+<!--SLOGAN-->
 <div class="pt-20 max-w-4xl mx-auto">
-  <section class="border rounded-2xl opacity-100 animate-fadeIn w-full bg-cover bg-center bg-no-repeat py-20 md:py-32"
+  <section class="border rounded-2xl opacity-100 w-full bg-cover bg-center bg-no-repeat py-20 md:py-32"data-aos="fade-right"
     style="background-image: url('midia/logo/Logo Sawadee.png');">
 
     <div class="flex justify-center items-center px-4">
@@ -73,7 +55,121 @@
   </section>
 </div>  
 
-<!---->
+<!--FUNDADORA-->
+<div class="flex pt-20 flex-col md:flex-row justify-center gap-6 text-white" data-aos="fade-left">
+  
+  <img src="juliana_fundo.jpg" class="w-full md:w-60 h-100 rounded-2xl">
+
+  <div class="text-center md:text-left max-w-xl px-4">
+    <h2 class="text-xl font-bold text-yellow-700">FUNDADORA</h2>
+    <h5 class="texto-white">Juliana Cabral é massoterapeuta há mais de 20 anos. Sempre em busca de evolução e excelência, viajou para a Tailândia com o propósito de conquistar o diploma de Master Massoterapeuta Internacional.
+Durante essa jornada, Juliana mergulhou profundamente nas culturas locais, se encantando com a forma acolhedora, respeitosa e humana com que as pessoas são tratadas. Essa experiência despertou nela o desejo de trazer esse conceito para o Brasil.
+Ainda nesse caminho de crescimento, Juliana participou de uma palestra ministrada por sua amiga Simone Viotto, CEO da JK Estética Avançada — que, curiosamente, foi sua primeira cliente de massagem em 2006. Foi nesse encontro que Simone também contribuiu na escolha do nome da empresa.
+Assim nasceu o Sawadee, palavra tailandesa usada como reverência e saudação, que significa “Seja bem-vindo”.
+Um espaço criado para ser acolhedor, onde um toque de amor vai além da pele e tira a dor da alma.</h5>
+  </div>
+</div>
+
+<!-- SERVICOS -->
+ <h1 class="py-20 flex justify-center text-yellow-700 font-bold text-xl" data-aos="fade-right">NOSSOS SERVICOS</h1>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4" data-aos="fade-right">
+
+    <!-- CARD 1 -->
+    <div class="bg-neutral-primary-soft block border border-default rounded-2xl shadow-xs">
+      <a href="desenvolvimento.html">
+        <img class="rounded-2xl w-full h-40 object-cover" src="midia/logo/Logo Sawadee.png" alt="" />
+      </a>
+      <div class="p-6 text-center bg-white">
+
+        <h5 class="mt-3 mb-6 text-2xl font-semibold tracking-tight text-heading">
+          DESENVOLVIMENTO<br>DE SOFTWARES
+        </h5>
+        <br>
+        <a href="desenvolvimento.html"
+          class="inline-flex items-center text-black bg-brand border border-yellow-700 hover:bg-brand-strong shadow-xs font-medium rounded-2xl text-sm px-4 py-2.5">
+          Veja Mais
+        </a>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="bg-neutral-primary-soft block border border-default rounded-2xl shadow-xs">
+      <a href="desenvolvimento.html">
+        <img class="rounded-2xl w-full h-40 object-cover" src="midia/logo/Logo Sawadee.png" alt="" />
+      </a>
+      <div class="p-6 text-center bg-white">
+
+        <h5 class="mt-3 mb-6 text-2xl font-semibold tracking-tight text-heading">
+          DESENVOLVIMENTO<br>DE SOFTWARES
+        </h5>
+        <br>
+        <a href="desenvolvimento.html"
+          class="inline-flex items-center text-black bg-brand border border-yellow-700 hover:bg-brand-strong shadow-xs font-medium rounded-2xl text-sm px-4 py-2.5">
+          Veja Mais
+        </a>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="bg-neutral-primary-soft block border border-default rounded-2xl shadow-xs">
+      <a href="desenvolvimento.html">
+        <img class="rounded-2xl w-full h-40 object-cover" src="midia/logo/Logo Sawadee.png" alt="" />
+      </a>
+      <div class="p-6 text-center bg-white">
+
+        <h5 class="mt-3 mb-6 text-2xl font-semibold tracking-tight text-heading">
+          DESENVOLVIMENTO<br>DE SOFTWARES
+        </h5>
+        <br>
+        <a href="desenvolvimento.html"
+          class="inline-flex items-center text-black bg-brand border border-yellow-700 hover:bg-brand-strong shadow-xs font-medium rounded-2xl text-sm px-4 py-2.5">
+          Veja Mais
+        </a>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="bg-neutral-primary-soft block border border-default rounded-2xl shadow-xs">
+      <a href="desenvolvimento.html">
+        <img class="rounded-t-2xl w-full h-40 object-cover" src="midia/logo/Logo Sawadee.png" alt="" />
+      </a>
+      <div class="p-6 text-center bg-white">
+
+        <h5 class="mt-3 mb-6 text-2xl font-semibold tracking-tight text-heading">
+          DESENVOLVIMENTO<br>DE SOFTWARES
+        </h5>
+        <br>
+        <a href="desenvolvimento.html"
+          class="inline-flex items-center text-black bg-brand border border-yellow-700 hover:bg-brand-strong shadow-xs font-medium rounded-2xl text-sm px-4 py-2.5">
+          Veja Mais
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--ANIMACAO-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1400,
+    once: true
+  });
+</script>
 
 
 
