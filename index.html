@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="midia/logo/logo_fivcon.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swadee</title>
+    <title>SAWADEE-SPA THAILAND</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -12,7 +14,7 @@
     <!--NAVBAR-->
 <nav class="bg-gray-100 fixed w-full z-20 top-0 start-0 border-b border-default rounded-2xl">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+    <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="midia/logo/logo_semFundo.png" class="h-14 " alt="Flowbite Logo" />
         <span class="text-yellow-700 self-center text-xl text-heading font-semibold whitespace-nowrap">SPA THAILAND</span>
     </a>
@@ -23,16 +25,16 @@
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
       <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
         <li>
-          <a href="#" class="block py-2 px-3 text-black bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page"> Home</a>
+          <a href="#home" class="block py-2 px-3 text-black bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page"> Home</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Sobre Nós</a>
+          <a href="#sobre" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Sobre Nós</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Servicos</a>
+          <a href="#servicos" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Serviços</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contatos</a>
+          <a href="#localizacao" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Localização</a>
         </li>
       </ul>
     </div>
@@ -40,52 +42,68 @@
 </nav>
 
 <!--SLOGAN-->
-<div class="pt-20 max-w-4xl mx-auto">
-  <section class="border rounded-2xl opacity-100 w-full bg-cover bg-center bg-no-repeat py-20 md:py-32"data-aos="fade-right"
-    style="background-image: url('midia/logo/Logo Sawadee.png');">
+<div class="pt-20 max-w-4xl mx-auto" id="home">
+  <section
+    class="relative border rounded-2xl overflow-hidden w-full bg-cover bg-center bg-no-repeat py-20 md:py-32"
+    data-aos="fade-right"
+    style="background-image: url('midia/logo/logo_banner.png')">
 
-    <div class="flex justify-center items-center px-4">
-      <h1 class="text-black text-2xl md:text-5xl font-bold text-center text-white drop-shadow-lg">
-        <span class="typewriter text-black">
+    <!-- OVERLAY -->
+    <div class="absolute inset-0 bg-black/40"></div>
+
+    <!-- CONTEÚDO -->
+    <div class="relative z-10 flex justify-center items-center px-4">
+      <h1 class="text-2xl md:text-5xl font-bold text-center text-black drop-shadow-lg">
+        <span class="typewriter text-white">
           Um Toque de amor, que vai além da pele e tira a dor da Alma!
         </span>
       </h1>
     </div>
 
   </section>
-</div>  
+</div>
 
-<!--FUNDADORA-->
-<div class="flex pt-20 flex-col md:flex-row justify-center gap-6 text-white" data-aos="fade-left">
-  
-  <img src="juliana_fundo.jpg" class="w-full md:w-60 h-100 rounded-2xl">
+<!--FUNDADORA/HISTORIA-->
+<div class="flex pt-20 flex-col md:flex-row justify-center gap-6 text-white" data-aos="fade-left" id="sobre">
 
+  <!-- VÍDEO INSTAGRAM -->
+  <div class="w-full md:w-60 aspect-[9/16] rounded-2xl overflow-hidden">
+  <iframe
+    src="https://www.instagram.com/reel/DFda5NFPKBk/embed"
+    class="w-full h-full"
+    frameborder="0"
+    loading="lazy"
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+  <!-- TEXTO -->
   <div class="text-center md:text-left max-w-xl px-4">
-    <h2 class="text-xl font-bold text-yellow-700">FUNDADORA</h2>
-    <h5 class="texto-white">Juliana Cabral é massoterapeuta há mais de 20 anos. Sempre em busca de evolução e excelência, viajou para a Tailândia com o propósito de conquistar o diploma de Master Massoterapeuta Internacional.
-Durante essa jornada, Juliana mergulhou profundamente nas culturas locais, se encantando com a forma acolhedora, respeitosa e humana com que as pessoas são tratadas. Essa experiência despertou nela o desejo de trazer esse conceito para o Brasil.
-Ainda nesse caminho de crescimento, Juliana participou de uma palestra ministrada por sua amiga Simone Viotto, CEO da JK Estética Avançada — que, curiosamente, foi sua primeira cliente de massagem em 2006. Foi nesse encontro que Simone também contribuiu na escolha do nome da empresa.
-Assim nasceu o Sawadee, palavra tailandesa usada como reverência e saudação, que significa “Seja bem-vindo”.
-Um espaço criado para ser acolhedor, onde um toque de amor vai além da pele e tira a dor da alma.</h5>
+    <h2 class="text-xl font-bold text-yellow-700">FUNDADORA/HISTÓRIA</h2>
+    <h5 class="text-white">
+      Juliana Cabral é massoterapeuta há mais de 20 anos. Sempre em busca de evolução e excelência, viajou para a Tailândia com o propósito de conquistar o diploma de Master Massoterapeuta Internacional. Durante essa jornada, Juliana mergulhou profundamente nas culturas locais, se encantando com a forma acolhedora, respeitosa e humana com que as pessoas são tratadas. Essa experiência despertou nela o desejo de trazer esse conceito para o Brasil. Ainda nesse caminho de crescimento, Juliana participou de uma palestra ministrada por sua amiga Simone Viotto, CEO da JK Estética Avançada que, curiosamente, foi sua primeira cliente de massagem em 2006. Foi nesse encontro que Simone também contribuiu na escolha do nome da empresa. Assim nasceu o Sawadee, palavra tailandesa usada como reverência e saudação, que significa “Seja bem-vindo”. Um espaço criado para ser acolhedor, onde um toque de amor vai além da pele e tira a dor da alma.
+    </h5>
   </div>
+
 </div>
 
 <!-- SERVICOS -->
- <h1 class="py-20 flex justify-center text-yellow-700 font-bold text-xl" data-aos="fade-right">NOSSOS SERVICOS</h1>
+ <h1 class="py-20 flex justify-center text-yellow-700 font-bold text-xl" data-aos="fade-right" id="servicos">SERVIÇOS DE DESTAQUE</h1>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4" data-aos="fade-right">
 
     <!-- CARD 1 -->
-    <div class="bg-neutral-primary-soft block border border-default rounded-2xl shadow-xs">
-      <a href="desenvolvimento.html">
-        <img class="rounded-2xl w-full h-40 object-cover" src="midia/logo/Logo Sawadee.png" alt="" />
+    <div class="bg-neutral-primary-soft block border border-default rounded-2xl shadow-xs bg-white">
+      <a href="https://wa.me/5511983535440?text=Oi!%20Vi%20seu%20site%20e%20queria%20saber%20mais%20detalhes.%20Você%20pode%20me%20ajudar?">
+        <img class="rounded-2xl w-full h-40 object-cover" src="midia/servicos/sawadee_acolhimento.jpeg" alt="" />
       </a>
-      <div class="p-6 text-center bg-white">
+      <div class="p-6 text-center">
 
-        <h5 class="mt-3 mb-6 text-2xl font-semibold tracking-tight text-heading">
-          DESENVOLVIMENTO<br>DE SOFTWARES
+        <h5 class="mt-3 mb-6 text-2xl font-semibold tracking-tight text-heading text-yellow-700">
+          SAWADEE<br>ACOLHIMENTO
         </h5>
         <br>
-        <a href="desenvolvimento.html"
+        <a href="https://wa.me/5511983535440?text=Oi!%20Vi%20seu%20site%20e%20queria%20saber%20mais%20detalhes.%20Você%20pode%20me%20ajudar?"
           class="inline-flex items-center text-black bg-brand border border-yellow-700 hover:bg-brand-strong shadow-xs font-medium rounded-2xl text-sm px-4 py-2.5">
           Veja Mais
         </a>
@@ -93,17 +111,17 @@ Um espaço criado para ser acolhedor, onde um toque de amor vai além da pele e 
     </div>
 
     <!-- CARD 2 -->
-    <div class="bg-neutral-primary-soft block border border-default rounded-2xl shadow-xs">
-      <a href="desenvolvimento.html">
-        <img class="rounded-2xl w-full h-40 object-cover" src="midia/logo/Logo Sawadee.png" alt="" />
+    <div class="bg-neutral-primary-soft block border border-default rounded-2xl shadow-xs bg-white">
+      <a href="https://wa.me/5511983535440?text=Oi!%20Vi%20seu%20site%20e%20queria%20saber%20mais%20detalhes.%20Você%20pode%20me%20ajudar?">
+        <img class="rounded-2xl w-full h-40 object-cover" src="midia/servicos/swadee_facial.jpeg" alt="" />
       </a>
-      <div class="p-6 text-center bg-white">
+      <div class="p-6 text-center">
 
-        <h5 class="mt-3 mb-6 text-2xl font-semibold tracking-tight text-heading">
-          DESENVOLVIMENTO<br>DE SOFTWARES
+        <h5 class="mt-3 mb-6 text-2xl font-semibold tracking-tight text-heading text-yellow-700">
+          SAWADEE<br>FACIAL
         </h5>
         <br>
-        <a href="desenvolvimento.html"
+        <a href="https://wa.me/5511983535440?text=Oi!%20Vi%20seu%20site%20e%20queria%20saber%20mais%20detalhes.%20Você%20pode%20me%20ajudar?"
           class="inline-flex items-center text-black bg-brand border border-yellow-700 hover:bg-brand-strong shadow-xs font-medium rounded-2xl text-sm px-4 py-2.5">
           Veja Mais
         </a>
@@ -111,17 +129,17 @@ Um espaço criado para ser acolhedor, onde um toque de amor vai além da pele e 
     </div>
 
     <!-- CARD 3 -->
-    <div class="bg-neutral-primary-soft block border border-default rounded-2xl shadow-xs">
-      <a href="desenvolvimento.html">
-        <img class="rounded-2xl w-full h-40 object-cover" src="midia/logo/Logo Sawadee.png" alt="" />
+    <div class="bg-neutral-primary-soft block border border-default rounded-2xl shadow-xs bg-white">
+      <a href="https://wa.me/5511983535440?text=Oi!%20Vi%20seu%20site%20e%20queria%20saber%20mais%20detalhes.%20Você%20pode%20me%20ajudar?">
+        <img class="rounded-2xl w-full h-40 object-cover" src="midia/servicos/sawadee_energetico.jpeg" alt="" />
       </a>
-      <div class="p-6 text-center bg-white">
+      <div class="p-6 text-center">
 
-        <h5 class="mt-3 mb-6 text-2xl font-semibold tracking-tight text-heading">
-          DESENVOLVIMENTO<br>DE SOFTWARES
+        <h5 class="mt-3 mb-6 text-2xl font-semibold tracking-tight text-heading text-yellow-700">
+          SAWADEE<br>ENERGÉTICO
         </h5>
         <br>
-        <a href="desenvolvimento.html"
+        <a href="https://wa.me/5511983535440?text=Oi!%20Vi%20seu%20site%20e%20queria%20saber%20mais%20detalhes.%20Você%20pode%20me%20ajudar?"
           class="inline-flex items-center text-black bg-brand border border-yellow-700 hover:bg-brand-strong shadow-xs font-medium rounded-2xl text-sm px-4 py-2.5">
           Veja Mais
         </a>
@@ -129,26 +147,126 @@ Um espaço criado para ser acolhedor, onde um toque de amor vai além da pele e 
     </div>
 
     <!-- CARD 4 -->
-    <div class="bg-neutral-primary-soft block border border-default rounded-2xl shadow-xs">
-      <a href="desenvolvimento.html">
-        <img class="rounded-t-2xl w-full h-40 object-cover" src="midia/logo/Logo Sawadee.png" alt="" />
+    <div class="bg-neutral-primary-soft block border border-default rounded-2xl shadow-xs bg-white">
+      <a href="https://wa.me/5511983535440?text=Oi!%20Vi%20seu%20site%20e%20queria%20saber%20mais%20detalhes.%20Você%20pode%20me%20ajudar?">
+        <img class="rounded-t-2xl w-full h-40 object-cover" src="midia/servicos/sawadee_sparitual.png" alt="" />
       </a>
-      <div class="p-6 text-center bg-white">
+      <div class="p-6 text-center">
 
-        <h5 class="mt-3 mb-6 text-2xl font-semibold tracking-tight text-heading">
-          DESENVOLVIMENTO<br>DE SOFTWARES
+        <h5 class="mt-3 mb-6 text-2xl font-semibold tracking-tight text-heading text-yellow-700">
+          SAWADEE<br> SPA RITUAL
         </h5>
         <br>
-        <a href="desenvolvimento.html"
+        <a href="https://wa.me/5511983535440?text=Oi!%20Vi%20seu%20site%20e%20queria%20saber%20mais%20detalhes.%20Você%20pode%20me%20ajudar?"
           class="inline-flex items-center text-black bg-brand border border-yellow-700 hover:bg-brand-strong shadow-xs font-medium rounded-2xl text-sm px-4 py-2.5">
           Veja Mais
         </a>
       </div>
     </div>
-
   </div>
 
+<!--CONTATOS-->
+<section class="w-full bg-fg-brand py-20 pb-20" data-aos="fade-left">
+    <div class="max-w-4xl mx-auto text-center px-6">
 
+        <h2 class="text-4xl font-bold mb-4 text-yellow-700">
+            Seu momento de cuidado começa aqui.<br> Fale conosco no WhatsApp.
+        </h2>
+
+        <p class="text-lg mb-8 opacity-90 text-white">
+            Atendimento rápido e direto pelo WhatsApp.
+        </p>
+
+        <a href="https://wa.me/5511911014699" target="_blank"
+           class="text-yellow-700 inline-flex items-center  text-fg-brand font-semibold px-8 py-4 rounded-base">
+            CHAMAR NO WHATSAPP
+            <img class="w-5 h-5 ms-3" src="midia/icone/icone-wpp.png">
+        </a>
+
+    </div>
+</section>
+
+<!--GOOGLE MAPS-->
+<div class="w-full h-screen" data-aos="fade-up" id="localizacao">
+  <iframe
+    class="w-full h-full border-0"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178.913202919326!2d-46.559729625224634!3d-23.450439357525372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef5a14171544f%3A0x9f83512a587cad0d!2sSawadee%20Thailand%20-%20Bem%20Estar%20Guarulhos!5e1!3m2!1spt-BR!2sbr!4v1768517838061!5m2!1spt-BR!2sbr"
+    loading="lazy"
+    allowfullscreen>
+  </iframe>
+</div>
+<br><br><br>
+
+<!-- FOOTER -->
+<footer class="w-full text-yellow-700 py-8 bg-gray-100 rounded-2xl ">
+    <div class="max-w-6xl mx-auto px-6">
+
+        <div class="flex flex-col items-center text-center space-y-4">
+
+            <!-- Ícone -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 16 16"
+                 class="w-6 h-6 fill-current text-yellow-700">
+                <path d="M2.678 11.894a1 1 0 0 1 .287.801 11 11 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8 8 0 0 0 8 14c3.996 0 7-2.807 7-6s-3.004-6-7-6-7 2.808-7 6c0 1.468.617 2.83 1.678 3.894m-.493 3.905a22 22 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a10 10 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105" />
+            </svg>
+
+            <!-- Título -->
+            <span class="text-sm font-semibold uppercase tracking-wide">
+                Contatos
+            </span>
+
+            <!-- WhatsApp -->
+            <div class="text-xs opacity-90">
+                <span class="block font-medium">WhatsApp</span>
+                <a href="https://wa.me/5511983535440?text=Oi!%20Vi%20seu%20site%20e%20queria%20saber%20mais%20detalhes.%20Você%20pode%20me%20ajudar?"
+                   target="_blank"
+                   class="hover:underline">
+                    (11)98353-5440
+                </a>
+            </div>
+
+            <!-- Instagram -->
+            <div class="text-xs opacity-90">
+                <span class="block font-medium">Instagram</span>
+                <a href="https://www.instagram.com/bemestar.sawadee?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                   target="_blank"
+                   class="hover:underline">
+                    @BEMESTAR.SAWADEE
+                </a>
+            </div>
+
+            
+        </div>
+
+        <!-- Linha inferior -->
+        <div class="mt-6 border-t border-white-700 pt-4 text-center text-xs text-white-400">
+            <a href="https://corexbr.com.br/">© 2026 COREX BR TECNOLOGIA. Todos os direitos reservados.</a><br>
+            <a href="https://github.com/israelsnicolau">DESENVOLVIDO POR ISRAEL NICOLAU</a>
+        </div>
+        
+
+    </div>
+</footer>
+
+
+</div>
+
+<!--BOTAO FLUTUANTE-->
+<a href="https://wa.me/5511983535440?text=Oi!%20Vi%20seu%20site%20e%20queria%20saber%20mais%20detalhes.%20Você%20pode%20me%20ajudar?"
+   target="_blank"
+   aria-label="Falar no WhatsApp"
+   class="fixed bottom-6 right-6 z-50 flex items-center justify-center
+          w-14 h-14 bg-green-600 text-white rounded-full
+          shadow-lg hover:bg-green-600 transition
+          animate-bounce">
+
+    <!-- Ícone WhatsApp -->
+    <img src="midia/icone/icone-wpp.png"
+         viewBox="0 0 24 24"
+         class="w-7 h-7 fill-current">
+        <path d="M20.52 3.48A11.94 11.94 0 1 0 3.48 20.52L2 22l1.6-.42A11.94 11.94 0 0 0 20.52 3.48Z"/>
+</img>
+</a>
 
 
 
